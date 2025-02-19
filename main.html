@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Rep Max Calculator</title>
+    <link rel="stylesheet" href="/main.css">
+    <script defer type="text/javascript" src="/main.js"></script>  
+</head>
+<body>
+    <h1> 3대 운동 1RM 계산기 <br></h1> 
+    
+    <div class="container">
+        <div class="input-container">
+            <div class="Calculator-container">
+                <div>
+                    <span> 벤치프레스 </span><br>
+                    <span> 중량 </span><input type="number" class="BPWeight" placeholder="직접 입력"> kg</input><br>
+                    <span> 반복횟수 </span><input type="number" class="BPRep" placeholder="직접 입력"> 회</input>
+                </div>
+                <div>
+                    <span> 스쿼트 </span><br>
+                    <span> 중량 </span><input type="number" class="SQWeight" placeholder="직접 입력"> kg</input><br>
+                    <span> 반복횟수 </span><input type="number" class="SQRep" placeholder="직접 입력"> 회</input>
+                </div>
+                <div>
+                    <span> 데드리프트 </span><br>
+                    <span> 중량 </span><input type="number" class="DLWeight" placeholder="직접 입력"> kg</input><br>
+                    <span> 반복횟수 </span><input type="number" class="DLRep" placeholder="직접 입력"> 회</input>
+                </div>
+            </div>
+        </div>
+        
+        <div class="output-container">
+            <h2>1RM 결과</h2>
+            <div id="result-container" class="result-container">
+                <span>좌측에 숫자를 입력하면 표시됩니다</span>
+            </div><br>
+
+            <h2>3대 중량 합산</h2>
+            <div id="total-1RM" class="total-1RM">
+                <span>좌측에 숫자를 입력하면 표시됩니다</span>
+            </div>
+        </div>
+    </div>  
+
+    <span><br>
+        Epley 공식으로 계산됩니다<br><br>
+
+        Epley Formula:<br>
+        1RM = W × (1 + R / 30)<br>
+        Where W is the weight lifted and R is the number of repetitions performed.</span>
+</body>
+</html>
