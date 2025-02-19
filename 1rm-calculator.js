@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("result-container").innerHTML = resultsHTML;
 
         if (exerciseCount > 0) {
-            document.getElementById("total-1RM").innerHTML = `<p>${exerciseCount}대 운동 합산 1RM: ${totalWeight.toFixed(2)} kg</p>`;
+            document.getElementById("total-1RM").innerHTML = `<p>${exerciseCount}대 운동 합산 예측: ${totalWeight.toFixed(2)} kg</p>`;
         } else {
             document.getElementById("total-1RM").innerHTML = "";
         }
