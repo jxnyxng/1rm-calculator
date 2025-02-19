@@ -82,7 +82,7 @@ body {
     }
     
     .result-container, .total-1RM {
-        height: 75px;
+        height: 120px;
         width: 80%;
         margin: 20px 0; /* 위아래 여백 균형 */
         padding: 15px;
@@ -93,5 +93,16 @@ body {
         align-items: center; /* 세로 중앙 정렬 */
         justify-content: center; /* 가로 중앙 정렬 */
         text-align: center;
+        flex-direction: column; 
+        gap: 10px; /* 각 결과 간격 */
+    } 
+    
+    .result-item {
+        padding: 10px;
+        width: 100%;
+        background: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
     }
     
