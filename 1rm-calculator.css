@@ -24,8 +24,8 @@ h1 {
 }
 
 .input-container, .output-container {
-    max-width: 500px;
-    width: 90%;
+    max-width: 300px;
+    width: 70%;
     background: rgb(234, 234, 234);
     padding: 20px;
     border-radius: 10px;
@@ -43,16 +43,17 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 100%;
+    width: 50%;
 }
 
 /* 개별 입력 블록 크기 */
 .Calculator-container div {
     background: rgb(244, 244, 244);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 50%; 
+    width: 80%; 
+    margin-left: 30px;
     text-align: center;
 }
 
@@ -86,16 +87,16 @@ input {
 }
 
 .result-item {
-    padding: 10px;
+    padding: 8px;
     width: 80%;
     background: #f9f9f9;
-    border-radius: 5px;
+    border-radius: 18px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-weight: bold;
 }
 
 /* 모바일 화면 최적화 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     h1 {
         font-size: 1.8rem; 
         margin-top: 20px;
