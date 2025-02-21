@@ -119,8 +119,8 @@ input {
     }
 
     .input-container, .output-container {
-        width: 95%; 
-        max-width: 450px;
+        width: 80%; 
+        max-width: 350px;
         height: auto; 
     }
 
