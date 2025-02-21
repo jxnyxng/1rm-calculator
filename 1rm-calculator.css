@@ -125,10 +125,10 @@ input {
     }
 
     .Calculator-container div {
-        width: 100%;
+        width: 85%;
     }
 
     input {
-        width: 80%;
+        width: 40%;
     }
 }
