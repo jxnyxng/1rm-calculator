@@ -27,8 +27,9 @@ h3 {
 span { 
     font-weight: 550;
     color: #111111;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
+
 /* 컨테이너 반응형 */
 .container {
     display: flex;
