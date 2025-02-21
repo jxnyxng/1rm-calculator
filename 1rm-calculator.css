@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #b3b3b3c8;
+    background-color: #e1e1e1c8;
     margin: 0;
     padding: 0;
 }
@@ -12,6 +12,11 @@ h1 {
     font-size: 2rem;
 }
 
+h2 {
+    margin-top: 30px;
+    color: #d6d6d6;
+    font-size: 1.5rem;
+}
 /* 컨테이너 반응형 */
 .container {
     display: flex;
@@ -26,7 +31,7 @@ h1 {
 .input-container, .output-container {
     max-width: 400px;
     width: 90%;
-    background: rgb(234, 234, 234);
+    background: rgb(81, 90, 95);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
