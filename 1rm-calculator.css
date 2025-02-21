@@ -24,8 +24,8 @@ h1 {
 }
 
 .input-container, .output-container {
-    max-width: 300px;
-    width: 70%;
+    max-width: 400px;
+    width: 90%;
     background: rgb(234, 234, 234);
     padding: 20px;
     border-radius: 10px;
@@ -43,17 +43,16 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 50%;
+    width: 100%;
 }
 
 /* 개별 입력 블록 크기 */
 .Calculator-container div {
     background: rgb(244, 244, 244);
-    padding: 30px;
-    border-radius: 20px;
+    padding: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 80%; 
-    margin-left: 30px;
     text-align: center;
 }
 
@@ -78,7 +77,7 @@ h1 {
 /* 입력 필드 */
 input { 
     height: 30px;
-    width: 40%;
+    width: 60%;
     padding: 5px;
     margin: 5px 0;
     border: 3px solid #13627c;
@@ -87,16 +86,16 @@ input {
 }
 
 .result-item {
-    padding: 8px;
+    padding: 10px;
     width: 80%;
     background: #f9f9f9;
-    border-radius: 18px;
+    border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-weight: bold;
 }
 
 /* 모바일 화면 최적화 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     h1 {
         font-size: 1.8rem; 
         margin-top: 20px;
@@ -118,6 +117,6 @@ input {
     }
 
     input {
-        width: 90%;
+        width: 100%;
     }
-}
+} 
