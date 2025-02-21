@@ -23,6 +23,12 @@ h3 {
     color: #d1e3fa;
     font-size: 1rem;
 }
+
+span { 
+    font-weight: 550;
+    color: #111111;
+    font-size: 1.1rem;
+}
 /* 컨테이너 반응형 */
 .container {
     display: flex;
