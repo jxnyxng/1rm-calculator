@@ -19,31 +19,27 @@ document.addEventListener("DOMContentLoaded", function () {
         let exerciseCount = 0;
 
         if (bpWeight && bpReps) {
-            const bp1RM = calculate1RM(bpWeight, bpReps);
+            let bp1RM = bpReps === 1 ? bpWeight : calculate1RM(bpWeight, bpReps);
             resultsHTML += `<div class="result-item">벤치프레스 1RM: ${bp1RM} kg</div>`;
             totalWeight += parseFloat(bp1RM);
             exerciseCount++;
         }
         if (sqWeight && sqReps) {
-            const sq1RM = calculate1RM(sqWeight, sqReps);
+            let sq1RM = sqReps === 1 ? sqWeight : calculate1RM(sqWeight, sqReps);
             resultsHTML += `<div class="result-item">스쿼트 1RM: ${sq1RM} kg</div>`;
             totalWeight += parseFloat(sq1RM);
             exerciseCount++;
         }
         if (dlWeight && dlReps) {
-            const dl1RM = calculate1RM(dlWeight, dlReps);
+            let dl1RM = dlReps === 1 ? dlWeight : calculate1RM(dlWeight, dlReps);
             resultsHTML += `<div class="result-item">데드리프트 1RM: ${dl1RM} kg</div>`;
             totalWeight += parseFloat(dl1RM);
             exerciseCount++;
         }
 
         document.getElementById("result-container").innerHTML = resultsHTML;
-
-        if (exerciseCount > 0) {
-            document.getElementById("total-1RM").innerHTML = `<p>${exerciseCount}대 운동 합산 예측: ${totalWeight.toFixed(2)} kg</p>`;
-        } else {
-            document.getElementById("total-1RM").innerHTML = "";
-        }
+        document.getElementById("total-1RM").innerHTML =
+            exerciseCount > 0 ? `<p>${exerciseCount}대 운동 합산 예측: ${totalWeight.toFixed(2)} kg</p>` : "";
     }
 
     document.querySelectorAll("input").forEach(input => {
