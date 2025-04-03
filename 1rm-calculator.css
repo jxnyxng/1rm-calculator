@@ -111,6 +111,7 @@ span{
     font-weight: 600;
 }
 
+
 /* 입력 필드 */
 input { 
     height: 30px;
@@ -126,8 +127,8 @@ input {
 
 /* 결과 항목 스타일 */
 .result-item {
-    padding: 20px;
-    width: 80%;
+    padding: 10px;
+    width: 90%;
     background: #f9f9f9;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -163,7 +164,7 @@ input {
     }
 
     .total-1RM{
-        width: 80%;
+        width: 70%;
     }
 }
 
