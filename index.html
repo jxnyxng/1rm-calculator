@@ -3,28 +3,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1RM-Calculator</title>
-    <link rel="stylesheet" href="https://jxnyxng.github.io/1rm-calculator/1rm-calculator.css">
-    <script defer type="text/javascript" src="https://jxnyxng.github.io/1rm-calculator/1rm-calculator.js"></script>  
+    <link rel="stylesheet" href="/main.css">
+    <script defer type="text/javascript" src="/main.js"></script>  
 </head>
 <body>
-    <h1> 3대 운동 1RM 계산기 <br></h1> 
-    <h3> 원하는 운동만 입력해도 됩니다. </h3>
+    <h1> 3대 운동 1RM 계산기 <br></h1>
     
     <div class="container">
         <div class="input-container">
             <div class="Calculator-container">
                 <div>
-                    <span> 벤치프레스 </span><br>
+                    <span> 벤치프레스 </span><br><hr>
                     <span> 중량  </span><input type="number" class="BPWeight" placeholder="직접 입력"> kg</input><br>
                     <span> 반복  </span><input type="number" class="BPRep" placeholder="직접 입력"> 회</input>
                 </div>
                 <div>
-                    <span> 스쿼트 </span><br>
+                    <span> 스쿼트 </span><br><hr>
                     <span> 중량  </span><input type="number" class="SQWeight" placeholder="직접 입력"> kg</input><br>
                     <span> 반복  </span><input type="number" class="SQRep" placeholder="직접 입력"> 회</input>
                 </div>
                 <div>
-                    <span> 데드리프트 </span><br>
+                    <span> 데드리프트 </span><br><hr>
                     <span> 중량  </span><input type="number" class="DLWeight" placeholder="직접 입력"> kg</input><br>
                     <span> 반복  </span><input type="number" class="DLRep" placeholder="직접 입력"> 회</input>
                 </div>
@@ -37,7 +36,7 @@
                 <span>숫자를 입력하세요</span>
             </div>
 
-            <h2> N대 몇? </h2>
+            <h2> N대 몇?  </h2>
             <div id="total-1RM" class="total-1RM">
                 <span>숫자를 입력하세요</span>
             </div>
@@ -45,7 +44,7 @@
     </div>  
 
     <h3><br>
-        Epley 공식으로 계산됩니다 (R>=2) <br><br>
+        Epley 공식으로 계산됩니다 (R>1) <br><br>
         
         Epley Formula:<br>
         1RM = W × (1 + R / 30)<br>
