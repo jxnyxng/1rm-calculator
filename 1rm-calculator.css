@@ -6,9 +6,9 @@ body {
     padding: 0; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-    background-image: url(https://github.com/jxnyxng/1rm-calculator/blob/main/gym.jpg?raw=true);
-    backdrop-filter: 20%;
+    background-image: url(https://github.com/jxnyxng/1rm-calculator/blob/main/gym.jpg?raw=true); 
 }
+
 
 h1 {
     margin-top: 30px;
@@ -47,9 +47,9 @@ span {
 }
 
 .input-container, .output-container { 
-    border: solid 1px hsl(33, 100%, 53%);
+    border: solid 3px hsla(27, 100%, 50%, 0.601);
 
-    box-shadow: 0 0 20px orange;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
     max-width: 400px;
     width: 80%;
     margin: 1%;
@@ -161,4 +161,9 @@ input {
     input {
         width: 40%;
     }
+
+    .total-1RM{
+        width: 80%;
+    }
 }
+
