@@ -158,7 +158,7 @@ input {
 
     .input-container, .output-container {
         padding:5%;
-        width: 80%; 
+        width: 90%; 
         max-width: 350px;
         height: auto; 
     }
