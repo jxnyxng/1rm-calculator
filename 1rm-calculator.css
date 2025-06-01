@@ -153,13 +153,12 @@ input {
     .container {
         flex-direction: column; 
         align-items: center;
-        padding: 3%;
     }
 
     .input-container, .output-container {
-        padding:5%;
-        width: 70%; 
-        max-width: 350px;
+        padding : 2%;
+        width: 85%; 
+        max-width: 330px;
         height: auto; 
     }
 
@@ -175,3 +174,4 @@ input {
         width: 70%;
     }
 }
+
