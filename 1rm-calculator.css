@@ -1,38 +1,37 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: hwb(0 23% 77% / 0.929);
+    /* background-color: hwb(0 87% 13% / 0.929); */
     margin: 0;
     padding: 0; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-    /* background-image: url(/Gym.png); 
-    background-repeat: no-repeat; 
-    background-size : contain; */
+    background-image: url(/image.png);  
+    object-fit: cover;
 }
 
 h1 {
     margin-top: 30px;
-    color: #f8f8f8;
+    color: #ffffff;
     font-size: 2rem;
 }
 
 /* 우측 결과창 제목 */
 h2 {
     margin-top: 30px;
-    color: #000000;
+    color: #fdfdfd;
     font-size: 1.5rem;
 }
 
 p {
     margin-top: 3%;
-    color: #000000;
+    color: #bf8383;
     font-size: 1rem;
 }
 
 span { 
     font-weight: 550;
-    color: #111111;
+    color: #910000;
     font-size: 1.1rem;
 }
 
@@ -47,15 +46,19 @@ span {
     width: 100%;
 }
 
-.input-container, .output-container { 
-    border: solid 3px hsla(27, 100%, 50%, 0.601);
+.input-container, .output-container {  
+    border-radius: 45px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px); 
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
-    box-shadow: 0 0 30px rgb(0, 0, 0);
     max-width: 400px; 
     height: 650px;
     width: 80%;
-    margin: 1%;
-    background: #e6e4e4;  
+    margin: 1%; 
+
     padding: 2%;
     border-radius: 40px;  
     display: flex;
@@ -77,25 +80,25 @@ span {
 
 /* 개별 입력 블록  */
 .Calculator-container div {
-    background: rgb(244, 244, 244);
+    background: rgb(244, 244, 244, 0.8);
     margin: 2%;
     padding: 20px;
-    border-radius: 30px; 
+    border-radius: 40px; 
     box-shadow: 0 0px 25px rgba(0, 0, 0, 0.1);
     width: 80%; 
     text-align: center;
 }
 
 /* 결과 컨테이너 */
-.result-container, .total-1RM {
+.result-container, .total-1RM { 
     height: auto;
     width: 80%;
     max-width: 400px;
     margin: 15px 0;
     padding: 30px;
-    background: white;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: rgb(244, 244, 244, 0.8);    
+    border-radius: 45px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,33 +109,34 @@ span {
 
 .total-1RM{
     font-weight: 600;
-    font-size: x-large;
+    font-size: xx-large;
+
 }
 
 span{
     font-size: large;
     font-weight: 600;
 }
-
-/* 입력 필드 */
+ 
 input { 
+    text-align: center;
     height: 30px;
     width: 30%;
-    padding: 5px;
+
     margin: 5px 0;
     margin-left: 4%;
     margin-top: 2%;
     border: 3px solid  hsl(33, 84%, 15%);
-    border-radius: 10px; /* 기존 5px → 10px */
+    border-radius: 40px;
     font-size: 1rem;
 }
 
 /* 결과 항목 스타일 */
 .result-item {
+    border-radius: 25px; 
     padding: 10px;
     width: 90%;
-    background: #f9f9f9;
-    border-radius: 20px;
+    background: rgb(244, 244, 244, 0.8);    
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-weight: bold;
     font-size: large;
