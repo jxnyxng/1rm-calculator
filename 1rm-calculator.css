@@ -153,9 +153,11 @@ input {
     .container {
         flex-direction: column; 
         align-items: center;
+        padding: 3%;
     }
 
     .input-container, .output-container {
+        padding:5%;
         width: 80%; 
         max-width: 350px;
         height: auto; 
