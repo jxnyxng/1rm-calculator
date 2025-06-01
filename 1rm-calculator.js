@@ -39,8 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         document.getElementById("result-container").innerHTML = resultsHTML;
         document.getElementById("total-1RM").innerHTML =
-            exerciseCount > 0 ? `<p>${exerciseCount}대 : ${totalWeight.toFixed(2)} kg</p>` : "";
-
+        exerciseCount > 0 ? `<span style="font-size:30px; font-weight:bolder;">${exerciseCount}대 : ${totalWeight.toFixed(2)} kg</span>` : "";
     }
 
     document.querySelectorAll("input").forEach(input => {
