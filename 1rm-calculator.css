@@ -25,13 +25,13 @@ h2 {
 
 p {
     margin-top: 3%;
-    color: #bf8383;
+    color: #a8aeff;
     font-size: 1rem;
 }
 
 span { 
     font-weight: 550;
-    color: #910000;
+    color: #6184ff;
     font-size: 1.1rem;
 }
 
@@ -49,8 +49,8 @@ span {
 .input-container, .output-container {  
     border-radius: 45px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(7px);
-    -webkit-backdrop-filter: blur(7px); 
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px); 
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 
