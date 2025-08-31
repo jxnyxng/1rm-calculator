@@ -1,66 +1,55 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    /* background-color: hwb(0 87% 13% / 0.929); */
+    background: #f7f7f7;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    padding: 0; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-    background-image: url(https://github.com/jxnyxng/1rm-calculator/blob/main/image.jpg?raw=true);
-    object-fit: cover;
+    padding: 0;
+    text-align: center;
 }
 
 h1 {
-    margin-top: 30px;
-    color: #ffffff;
+    margin-top: 24px;
+    color: #222;
     font-size: 2rem;
 }
 
 /* 우측 결과창 제목 */
 h2 {
-    margin-top: 30px;
-    color: #fdfdfd;
+    margin-top: 24px;
+    color: #222;
     font-size: 1.5rem;
 }
 
 p {
-    margin-top: 3%;
-    color: #a8aeff;
-    font-size: 1rem;
+    margin-top: 24px;
+    color: #666;
+    font-size: 0.95rem;
 }
 
 span { 
-    font-weight: 550;
-    color: #6184ff;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
 }
 
 
 .container { 
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    margin-top: 20px;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
+    gap: 32px;
+    margin: 32px auto;
+    max-width: 900px;
 }
 
 .input-container, .output-container {  
-    border-radius: 45px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px); 
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-
-    max-width: 400px; 
-    height: 650px;
-    width: 80%;
-    margin: 1%; 
-
-    padding: 2%;
-    border-radius: 20px;  
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    min-width: 320px;
+    flex: 1 1 350px;
+    max-width: 400px;
+    margin: 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,39 +61,34 @@ span {
 /* 입력 폼 */
 .Calculator-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    gap: 24px;
+    justify-content: space-between;
     width: 100%;
 }
 
 /* 개별 입력 블록  */
 .Calculator-container div {
-    background: rgb(244, 244, 244);
-    margin: 2%;
-    padding: 20px;
-    border-radius: 20px; 
-    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.1);
-    width: 80%; 
+    background: #f0f2f5;
+    margin: 0 8px;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    flex: 1;
     text-align: center;
 }
 
 /* 결과 컨테이너 */
 .result-container, .total-1RM { 
-    height: auto;
+    margin: 16px 0;
+    padding: 16px;
+    background: #f0f2f5;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    color: #0078d4;
+    text-align: center;
+    min-height: 40px;
     width: 80%;
     max-width: 400px;
-    margin: 15px 0;
-    padding: 30px;
-    background: rgb(244, 244, 244);    
-    border-radius: 45px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .total-1RM{
@@ -120,15 +104,18 @@ span{
  
 input { 
     text-align: center;
-    height: 30px;
-    width: 30%;
-
-    margin: 5px 0;
-    margin-left: 4%;
-    margin-top: 2%;
-    border: 3px solid  hsl(33, 84%, 15%);
-    border-radius: 40px;
+    width: 80px;
+    padding: 6px 10px;
+    margin: 8px 0;
+    border: 1px solid #bbb;
+    border-radius: 6px;
     font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #0078d4;
 }
 
 /* 결과 항목 스타일 */
@@ -149,27 +136,22 @@ input {
         font-size: 1.8rem; 
         margin-top: 20px;
     }
-
     .container {
         flex-direction: column; 
         align-items: center;
     }
-
     .input-container, .output-container {
         padding : 2%;
         width: 85%; 
         max-width: 330px;
         height: auto; 
     }
-
     .Calculator-container div {
         width: 85%;
     }
-
     input {
         width: 40%;
     }
-
     .total-1RM{
         width: 70%;
     }
