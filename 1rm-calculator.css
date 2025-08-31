@@ -76,7 +76,7 @@ span {
 /* 입력 폼 */
 .Calculator-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 24px;
     width: 100%;
 }
