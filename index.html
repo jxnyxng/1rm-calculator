@@ -7,45 +7,41 @@
     <script defer type="text/javascript" src="https://jxnyxng.github.io/1rm-calculator/1rm-calculator.js"></script>  
 </head>
 <body>
-    <h1>3대 운동 1RM 계산기</h1>
-    <div class="container"> 
-            <div class="Calculator-container">
-                <div>
-                    <span>벤치프레스</span><br><hr>
-                    <span>중량</span>
-                    <input type="number" class="BPWeight" placeholder="직접 입력"> kg<br>
-                    <span>반복</span>
-                    <input type="number" class="BPRep" placeholder="직접 입력"> 회
-                </div>
-                <div>
-                    <span>스쿼트</span><br><hr>
-                    <span>중량</span>
-                    <input type="number" class="SQWeight" placeholder="직접 입력"> kg<br>
-                    <span>반복</span>
-                    <input type="number" class="SQRep" placeholder="직접 입력"> 회
-                </div>
-                <div>
-                    <span>데드리프트</span><br><hr>
-                    <span>중량</span>
-                    <input type="number" class="DLWeight" placeholder="직접 입력"> kg<br>
-                    <span>반복</span>
-                    <input type="number" class="DLRep" placeholder="직접 입력"> 회
-                </div>
-            </div> 
-            
-        <div class="output-container">
-            <h2>1RM 예측</h2>
-            <div id="result-container" class="result-container">
-                <span>숫자를 입력하세요</span>
+
+    <div class="calculator-container">
+        <h1>1RM 예측 계산기 🏋️</h1>
+        <p class="formula">공식: 1RM = 무게(W) × (1 + 반복횟수(R) / 30)</p>
+
+        <div class="exercise-group">
+            <h2>벤치프레스</h2>
+            <div class="input-wrapper">
+                <input type="number" id="bench-weight" placeholder="무게 (kg)">
+                <input type="number" id="bench-reps" placeholder="반복 횟수">
             </div>
-            <h2>N대 합</h2>
-            <div id="total-1RM" class="total-1RM">
-                <span>숫자를 입력하세요</span>
-            </div>
-            <p>Epley Formula:<br>
-                1RM = W × (1 + R / 30)<br>
-                Where W is the weight lifted and R is the number of repetitions performed.</p>
+            <p class="result" id="bench-result">예상 1RM: </p>
         </div>
+
+        <div class="exercise-group">
+            <h2>스쿼트</h2>
+            <div class="input-wrapper">
+                <input type="number" id="squat-weight" placeholder="무게 (kg)">
+                <input type="number" id="squat-reps" placeholder="반복 횟수">
+            </div>
+            <p class="result" id="squat-result">예상 1RM: </p>
+        </div>
+
+        <div class="exercise-group">
+            <h2>데드리프트</h2>
+            <div class="input-wrapper">
+                <input type="number" id="deadlift-weight" placeholder="무게 (kg)">
+                <input type="number" id="deadlift-reps" placeholder="반복 횟수">
+            </div>
+            <p class="result" id="deadlift-result">예상 1RM: </p>
+        </div>
+
+        <button id="calculate-btn">계산하기</button>
     </div>
+
+    <script src="1rm-calculator.js"></script>
 </body>
 </html>
