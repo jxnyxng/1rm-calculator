@@ -1,179 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
 body {
-    background: #e3e6ea;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
+}
+
+.calculator-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
     text-align: center;
 }
 
 h1 {
-    margin-top: 24px;
-    color: #0b0c22;
-    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-/* 우측 결과창 제목 */
-h2 {
-    margin-top: 24px;
-    color: #d6d6d6;
-    font-size: 1.5rem;
+.formula {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 25px;
 }
 
-p {
-    margin-top: 24px;
-    color: #b0b8c1;
-    font-size: 0.95rem;
+.exercise-group {
+    margin-bottom: 20px;
 }
 
-span { 
-    font-size: 1rem;
-    color: #f3f6fa;
-    font-weight: 600;
+.exercise-group h2 {
+    color: #555;
+    margin-bottom: 10px;
+    text-align: left;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
 }
 
-
-.container { 
+.input-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    margin: 32px auto;
-    max-width: 900px;
-}
-.input-container {
-    background: #232a36;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    padding: 32px 24px;
-    min-width: 320px;
-    flex: 1 1 350px;
-    max-width: 400px;
-    margin: 1%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-.output-container {  
-    background: #232a36;
-    border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    padding: 32px 24px;
-    min-width: 320px;
-    flex: 1 1 350px;
-    max-width: 400px;
-    margin: 1%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
- 
-
-/* 입력 폼 */
-.Calculator-container {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+input[type="number"] {
     width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
 }
 
-/* 개별 입력 블록  */
-.Calculator-container div {
-    width: 100%;
-    background: #313a49;
-    color: #f3f6fa;
-    margin: 0 8px;
-    padding: 16px 8px;
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+input[type="number"]::placeholder {
+    color: #aaa;
 }
 
-/* 결과 컨테이너 */
-.result-container, .total-1RM { 
-    margin: 16px 0;
-    padding: 16px;
-    background: #313a49;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    color: #7ab6ff;
-    text-align: center;
-    min-height: 40px;
-    width: 80%;
-    max-width: 400px;
-}
-
-.total-1RM{
-    font-weight: 600;
-    font-size: xx-large;
-
-}
-
-span{
-    font-size: large;
-    font-weight: 600;
-}
- 
-input { 
-    text-align: center;
-    width: 80px;
-    padding: 6px 10px;
-    margin: 8px 0;
-    border: 1px solid #4a5a6a;
-    border-radius: 6px;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.2s;
-    background: #232a36;
-    color: #f3f6fa;
-}
-
-input:focus {
-    border-color: #7ab6ff;
-}
-
-/* 결과 항목 스타일 */
-.result-item { 
-    padding: 10px;
-    width: 90%;
-    background: rgb(244, 244, 244, 0.8);    
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.result {
+    text-align: left;
     font-weight: bold;
-    font-size: large;
-}
- 
-
-/* 모바일 화면 최적화 */
-@media screen and (max-width: 768px) {
-    h1 {
-        font-size: 1.8rem; 
-        margin-top: 20px;
-    }
-    .container {
-        flex-direction: column; 
-        align-items: center;
-    }
-    .input-container, .output-container {
-        padding : 2%;
-        width: 85%; 
-        max-width: 330px;
-        height: auto; 
-    }
-    .Calculator-container div {
-        width: 85%;
-    }
-    input {
-        width: 40%;
-    }
-    .total-1RM{
-        width: 70%;
-    }
+    color: #007bff;
+    font-size: 1.1em;
+    min-height: 25px;
 }
 
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}   
